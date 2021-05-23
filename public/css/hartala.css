@@ -1,0 +1,95 @@
+
+.leftSideAdmin{
+    background-image: linear-gradient(to bottom,#670e6d, #530B57,#3b0c49, #22072A, #090C15);
+    width: 23%;
+    padding: 0px 91px 0px 0px;
+}
+.leftSideAdmin h1{
+   /* padding-left: 5px;
+    padding-top: 5px;*/
+    padding: 0px 64px 0px 0px;
+}
+.main{
+    height: 100%;
+}
+.tabsDiv div{
+    display: flex;
+    justify-content: start;
+    width: 73%;
+    border-radius: 13px;
+    border-bottom: none;
+    padding: 0px 14px;
+    color: rgb(255, 255, 255,.7);
+}
+/*.tabsDiv div::before{
+    content: '';
+    z-index: 300;
+    width: 9%;
+    height:32px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-color: white;
+    position: absolute;
+    left: 132px;
+    display: none;
+}
+.tabsDiv div:hover::before{
+    display:inline;
+}*/
+.tabsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabsDiv div:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: All 0.1s linear;
+}
+.mainWindow{
+    
+    width: 76%;
+    background-color: rgb(255,255,255,.5);
+    border-radius: 60px;
+    position: relative;
+    right: 66px;
+    z-index: 200;
+    box-shadow: -2px 6px 6px -3px rgb(0, 0, 0,.3);
+}
+.rightSideAdmin{
+    top: 20%;
+    position: absolute;
+    width: 4%;
+    height: 273px;
+    background-image: linear-gradient(to bottom,#670e6d, #530B57,#3b0c49, #22072A);
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: grid;
+    grid-row-gap: 0px;
+    padding:25px 25px 4px 18px;
+    color:  rgb(255, 255, 255,.8);
+}
+.rightSideAdmin p:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255,.5);
+    transition: All 0.5s linear;
+}
+
+.topNavArea{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topNav{
+    width: 50%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,#670e6d, #530B57,#3b0c49, #22072A);
+}

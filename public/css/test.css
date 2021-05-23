@@ -1,0 +1,960 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(131, 172, 226); 
+}
+.leftSideAdmin{
+    background: rgba(0,0,0,.8);
+    width: 20%;
+    height: 100%
+}
+.leftSideAdmin h1{
+    color: white;
+    padding: 0px 64px 0px 0px;
+}
+.main{
+        height: 100%;
+        overflow-y: hidden;
+}
+
+.leftBox{
+    border-bottom: 1px solid rgb(61, 61, 61);
+    margin-bottom: 3px;
+    padding: 0px 0px 4px 0px;
+}
+.LeftBox p{
+    padding-left: 3px;
+    color: rgba(255,255,255,.5);
+    margin-bottom: 5px;
+}
+.tabsDiv p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left:2px; 
+}
+
+/*.tabsDiv div::before{
+    content: '';
+    z-index: 300;
+    width: 9%;
+    height:32px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-color: white;
+    position: absolute;
+    left: 132px;
+    display: none;
+}
+.tabsDiv div:hover::before{
+    display:inline;
+}*/
+
+.tabsDiv li{
+    display: flex;
+    justify-content: start;
+    width: 73%;
+    border-radius: 13px;
+    border-bottom: none;
+    padding: 2px 14px;
+    color: rgba(255, 255, 255,.3);
+}
+.tabsDiv li:hover {
+    cursor: pointer;
+    color: rgb(255,255,255);
+    transition: All 0.3s linear;
+}
+.tabsDiv li:hover svg,.tabsDiv li:hover p{
+    color: rgb(255,255,255);
+    transition: All 0.1s linear;
+}
+.tabActive{
+    background-color: rgba(255, 255, 255,.2);
+}
+.tabActive p , .tabActive svg{
+    color: rgb(255, 255, 255);
+}
+.tabActive:hover svg,.tabActive:hover p{
+    color: black;
+}
+.mainWindow{
+    width: 80%;
+    background-color: rgba(255,255,255,.5);        
+    position: relative;
+    box-shadow: -2px 6px 6px -3px rgba(0, 0, 0,.3);
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.rightSideAdmin{
+    top: 20%;
+    position: absolute;
+    width: 4%;
+    height: 273px;
+    background-image: linear-gradient(to bottom,#670e6d, #530B57,#3b0c49, #22072A);
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: grid;
+    grid-row-gap: 0px;
+    padding:25px 25px 4px 18px;
+    color:  rgba(255, 255, 255,.8);
+}
+.rightSideAdmin p:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255,.5);
+    transition: All 0.5s linear;
+}
+
+.topNavArea{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.topNav {
+    padding: 0px 0px;
+    height: 35px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.topNav li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:0px 15px;
+    cursor: pointer;
+    color: white;
+}
+.topNav li:hover{   
+    background-color: rgba(255,255,255,.2);
+    transition: All 0.2s linear;
+}
+.topNavActive{
+    border-bottom: 3px solid #259df9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255,255,255,.2);   
+}
+.tabsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userInfoBox{
+    padding: 15px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+.userInfoBox  div:first-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    bottom: 0px;
+    
+}
+.userInfoBox  div:first-child i{
+    color: white;
+    margin-bottom: 3px;
+}
+.userInfoBox #pp{
+    width: 100%;
+    height: 100%;
+    border:1px solid;
+    border-radius: 50px;
+    padding: 2px;
+}
+.userInfoBox div:first-child .changeImage{
+    cursor:auto;
+    transition: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 50%;
+    background-color:rgba(220, 220, 220, 0.8);
+    color: black;
+    position: absolute;
+    bottom: 0px;
+}
+.userInfoBox div:first-child:hover{
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(85, 85, 85);
+}
+.userInfoBox div:first-child:hover #pp{
+    border-radius: 0px;
+}
+.userInfoBox div:first-child:hover .changeImage{
+    display: flex;
+}
+
+
+.userInfoBox .userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.userInfoBox .userInfo p{
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.userInfoBox .userInfo div{
+    display: flex;
+    flex-direction: row;
+}
+.userInfoBox .userInfo div i{
+  margin: 0px 5px;
+}
+.notificationIcon{
+    cursor: pointer;
+}
+.notificationIcon span{
+    width: 7px;
+    height: 7px;
+    border-radius: 13px;
+    margin-bottom: 8px;
+    background-color: red;
+    
+}
+
+.LeftBoxBottom{
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+.LeftBoxBottom div:last-child{
+    margin-left: 3px;
+}
+.leftSideAdmin a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.chartContainer{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.chart{
+    width: 90%;
+}
+.rowContainer{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.projectImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardUserImg{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.cardUserImg img{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 60px;
+    border: 2px solid gainsboro;
+}
+
+.cardUserImg h6{
+    margin-left: 5px;
+}
+.cardButton{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 18px;
+    margin-bottom: 12px;
+
+}
+.cardButton input{
+    margin: 0px 3px;
+}
+.userContainer, .projectContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.resultsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchBox{
+    width:50%;
+}
+.loading{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    z-index: 500;
+    bottom: 0px;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.loadingIcon{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    border-top: 2px solid white;
+    background-color: transparent;
+    position: fixed;
+    left: 55%;
+    z-index: 500;
+    animation: loading 1s linear infinite;
+}
+.searchedUser{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.searchedUserImage{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.searchedUserImage img{
+    max-width: 100%;
+    max-height: 238px;
+    border: 3px solid gainsboro;
+    padding: 2px;
+    margin-bottom: 18px;
+}
+.searchedUserInfo{
+    width: 70%;
+    margin-left: 20px
+}
+.searchedUserInfo li{
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    border: 3px solid gainsboro;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+.searchedUserInfo li:hover{
+        box-shadow: 2px 0px 20px 0px rgba(0,0,0,.5);
+       
+        
+}
+
+.searchedUserInfo li:first-child{
+    margin-top: 0px;
+}
+.searchedUserInfo li span{
+    background-color: gray;
+    padding: 0px;
+    display: flex;
+    padding: 6px;
+    color: white;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 40%;
+}
+.searchedUserInfo li i{
+    margin: 5px;
+    margin-right: 10px;
+    color: rgba(255,255,255,.9);
+}
+.searchedUserInfo li p{
+    margin: 0px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.searchedUserInfo div li:first-child{
+    margin-top: 5px;
+}
+.searchedUserInfo div li span{
+    width: 60%;
+}
+.searchedUserInfo div li span p{
+    width: 77%;
+}
+.searchedUserInfo div li p{
+    width: 30%;
+}
+
+.cardRows .card-deck{
+    margin-bottom: 5px
+}
+.cardRows .extraProjects {
+    display: none;
+    transition: All 0.3s linear;
+}
+.ToggleProjectsIcon{
+    position: relative;
+    bottom: -30px;
+    left: 48%;
+    width: 50px;
+    height: 50px;
+    margin-top: -27px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+.lessIcon i{
+    transform: rotate(180deg);
+    transition: All 0.3s linear;
+}
+.moreIcon i{
+    transition: All 0.3s linear;
+}
+.circlesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 10px 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.circlesDiv li{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gainsboro;
+    list-style: none;
+    border-radius: 25px;
+    align-items: center;
+    padding: 6px;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: All 0.3s linear;
+}
+.circlesDiv li:hover{
+    background-color: rgb(131, 172, 226);
+}
+.categoryProActive{
+    background-color: rgb(131, 172, 226);
+}
+
+.circlesDiv li img{
+    width: 50px;
+    height: 51px;
+    padding: 2px;
+    border: 1px solid gainsboro;
+    border-radius: 40px;
+}
+.circlesDiv li p{
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.circlesDiv li .fa-times-circle{
+    width: 0;
+    position: relative;
+    bottom: 30px;
+    right: 0px;
+    color: red;
+}
+.activeProjects{
+    background-color:rgb(131, 172, 226); 
+    color: white;
+}
+.colContainer{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .goldMedal{
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #ffb600;
+    border-radius: 10px;
+}
+
+.topTen{
+    padding: 15px 0px;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.topTen i{
+    color: #ffb600;
+    padding: 5px;
+}
+.subCategoriesDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    overflow-x: auto;
+    margin: 7px;    
+}
+
+.subCategoriesDiv li{
+    padding: 5px;
+    list-style: none;
+    margin: 2px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+}
+
+.subCategoriesDiv li:hover{
+    text-decoration: none;
+    background-color:rgb(131, 172, 226);
+}
+.subCategoryProActive{
+    background-color:rgb(131, 172, 226); 
+    color: white;
+}
+.formContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.formContainer .selectionDiv{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.formContainer .selectionDiv div{
+    margin-bottom: 8px;
+    border: 1px solid gainsboro;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+.formContainer .selectionDiv div ul{
+    list-style: none;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    height: 200px;
+    padding-left: 15px;
+}
+.selectionDiv div h6 {
+    border: 1px solid gainsboro;
+    padding: 8px;
+    width: 100%;
+}
+.formContainer .selectionDiv div ul li{
+    display: flex;flex-direction: row;align-items: center;padding:0px 5px;
+    transition:all .2s linear ;
+}
+.formContainer .selectionDiv div ul li p{
+    margin-bottom:0px;margin-left:2px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    width:78%;
+}
+.form div{
+    margin-bottom: 5px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.squarContainer{
+    width: 242px;
+    height: 165px;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid gainsboro;
+    position: relative;
+        border-radius: 10px;
+}
+.squarContainer img{
+    border-radius: inherit;
+    width:100%;
+    height: 100%;
+}
+.squarContainer .content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    padding: 3px 10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    color: white;
+}
+.squarContainer .content .ctgoryAction{
+    width: max-content;
+    position: absolute;
+    bottom: 10px;
+}
+.tag {
+    background: gainsboro;
+    padding: 0px 5px;
+    border-radius: 7px;
+    margin: 0px 5px;
+}
+.editForm {
+    position: absolute;
+    height: 100%;
+    z-index: 300000;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+}
+.SubCategories{
+    color: white;
+    position: absolute;
+    height: 90%;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 3000000;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.fadeOut{
+    top: 4px;
+    position: absolute;
+    right: 17px;
+    width: min-content;
+    color: white;
+    cursor: pointer;
+}
+#subCategoryList{
+    transition: All 0.3s linear;
+}
+.InfoDiv{
+    z-index: 1000;
+    padding: 10px 30px;
+    width: 81%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    overflow: hidden scroll;
+    background-color:rgba(255, 255, 255,.9);
+    display: none;
+    color:black;
+}
+.projectDetialsDiv,.offerDetialsDiv{
+    margin-top: 20px;
+    padding-top: 12px;
+    background-color: white;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 3%;
+}
+.projectDetialsDiv div{
+    padding: 11px;
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+}
+.projectDetialsDiv li{
+    list-style: none;
+    padding: 1px 5px;
+    background-color: gray;
+    margin:0px 5px;
+    border-radius: 20%;
+}
+.projectDetialsDiv .tags li{
+    background-color: gainsboro;
+}
+.projectDetialsDiv .programs li{
+    color: white    ;
+    background-color: rgb(59, 137, 255);
+}
+.projectDetialsDiv img{
+    max-width: 570px;
+    border-radius: 7px;
+    margin: 11px;;
+}
+.notificationsDiv{
+    display: none;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    width: 40%;
+}
+.success{
+    box-shadow: 0 0 6px rgb(43, 230, 68);
+    flex-direction: column;
+    border: 1px solid rgba(0, 255, 76, 0.2);
+    animation: successAlert .5s linear 1;
+}
+.success li{
+    list-style: none;
+    color: green;
+    margin: 5px;
+}
+.error{
+    box-shadow: 0 0 6px red;
+    flex-direction: column;
+    border: 1px solid rgba(252, 0, 0,.2);
+    animation: errorAlert .5s linear 1;
+}
+.error li{
+    list-style: none;
+    color: red;
+    margin: 5px;
+}
+.bannedProject{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background-color: rgba(238, 255, 0,.5);
+}
+.bannedProject::before{
+    content: 'banned';
+    color: black;
+    font-weight: 500;
+    position: absolute;
+    top: 73px;
+    left: 86px;
+}
+.card:hover .bannedProject, .card:hover .rejectedProject{
+    display: none;
+    
+}
+.rejectedProject{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background-color: rgba(255, 0, 0,.5);
+    
+}
+.rejectedProject::before{
+    content: 'Rejected';
+    color: black;
+    font-weight: 500;
+    position: absolute;
+    top: 73px;
+    left: 86px;
+
+}
+#projectOfferForm{
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+.searchDiv{
+    width: 43%;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+.searchIcon{
+    position: relative;
+    right: 26px;
+    cursor: pointer;
+}
+.searchResult{
+    width: 39%;
+    max-height: 120px;
+    overflow:hidden scroll;
+}
+.searchResult li{
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    list-style: none;
+    border: 1px solid gainsboro;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+.searchResult li input{
+    cursor: pointer;
+}
+.s
+earchResult li:hover{
+    background-color: gainsboro;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:checked + .slider:before {
+    content: "on";
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    content: "off";
+    color: gainsboro;
+    font-weight: bold;
+  }
+  .omForm .col-auto{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .fa-cog{
+    animation: unsetting .2s linear 1;
+  }
+  .fa-cog:hover{
+    animation: setting .2s linear 1;
+    cursor: pointer;
+  }
+  .state .loadingIcon{
+    width: 60px;
+    height: 60px;
+    display: none;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    border-top: 2px solid white;
+    background-color: transparent;
+    position: absolute;
+    left: 36%;
+    top: 40%;
+    z-index: 500;
+    animation: loading 1s linear infinite;
+  }
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes setting {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(90deg); }
+  }
+  @keyframes unsetting {
+    0% { transform: rotate(90deg); }
+    100% { transform: rotate(0deg); }
+  }
+@keyframes errorAlert {
+    0% { background-color:red; color:white }
+    100% { background-color:white; color:red }
+  }
+  @keyframes successAlert {
+    0% { background-color:green; color:white }
+    100% { background-color:white; color:green }
+  }
+
